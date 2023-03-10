@@ -55,8 +55,10 @@ const Home: NextPage = () => {
               
               <option selected value="PES2UG22">EC Campus First Year</option>
               <option value="PES2UG21">EC Campus Second Year</option>
+              <option value="PES2UG20">EC Campus Third Year</option>
               <option value="PES1UG22">RR Campus First Year</option>
               <option value="PES1UG21">RR Campus Second Year</option>
+              <option value="PES1UG20">EC Campus Third Year</option>
           </select>
               <input
                 type="text"
