@@ -10,10 +10,10 @@ const Home: NextPage = () => {
   const [prefix, setPrefix] = useState("");
   const [message, setMessage] = useState("");
   // handle submit which makes a post request to backend sending srn and prefix in json form and receiving back the message
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     const data = { "srn":srn, "prefix":prefix};
-    fetch("https://registrations.sakshamalok.repl.co/attended", {
+    void fetch("https://registrations.sakshamalok.repl.co/attended", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -22,6 +22,7 @@ const Home: NextPage = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-member-access
         setMessage(data.message);
         setSrn("");
       });
