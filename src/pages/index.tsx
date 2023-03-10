@@ -70,7 +70,7 @@ const Home: NextPage = () => {
 
               </div>
               <div >
-              <button type="button" onClick={handleSubmit} className="bg-clip-padding backdrop-filter   text-white transition-colors delay-100 hover:bg-[hsl(280,100%,70%)] rounded-lg py-2 px-8 backdrop-blur-xl bg-opacity-60 border">Present</button>
+              <button type="button" onClick={handleSubmit} className="bg-clip-padding backdrop-filter   active:bg-violet-700 text-white transition-colors delay-100 hover:bg-[hsl(280,100%,70%)] rounded-lg py-2 px-8 backdrop-blur-xl bg-opacity-60 border">Present</button>
               </div>
               </form>
               <div className="text-lg font-medium text-white">
