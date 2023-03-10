@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Home: NextPage = () => {
   const [srn, setSrn] = useState("");
-  const [prefix, setPrefix] = useState("");
+  const [prefix, setPrefix] = useState("PES2UG22");
   const [message, setMessage] = useState("");
   // handle submit which makes a post request to backend sending srn and prefix in json form and receiving back the message
   const handleSubmit = (e: { preventDefault: () => void; }) => {
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
               <option value="PES2UG20">EC Campus Third Year</option>
               <option value="PES1UG22">RR Campus First Year</option>
               <option value="PES1UG21">RR Campus Second Year</option>
-              <option value="PES1UG20">EC Campus Third Year</option>
+              <option value="PES1UG20">RR Campus Third Year</option>
           </select>
               <input
                 type="text"
